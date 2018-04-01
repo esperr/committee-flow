@@ -29,7 +29,7 @@
 
     var currentLocation = location.hostname;
     console.log(currentLocation);
-    var filenameStem = currentLocation + "/data/sankey";
+    var filenameStem = "./data/sankey";
     var allsubjects;
 
     //manually call a fetch when we load the page for the first time
