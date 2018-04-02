@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="Flow.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<title>About Committee Flow</title>
+</head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<div class="container">
+<div id="topbanner" class="jumbotron">
+	<h1>About Committee Flow</h1>
+	<a id="about" class="label label-default" href="index.html">Home</a>
+</div>
+   <div class="row">
+
+<div class="col-sm-7 col-md-7 col-lg-7 aboutleft">
+	<div class="panel panel-default">
+	<div class="panel-body">
+		<h2>Why Committee Flow?</h2>
+    <p>The work of committees is central to the functioning of both the House and the Senate. Therefore, it is potentially useful to be able to take a broad view of how bills proceed (or fail to
+      proceed) through those committees. </p>
+    <h2>How it works</h2>
+    <p>Analysts from the <a href="http://www.loc.gov/crsinfo/about/">Congressional Research Service</a> look at each bill and resolution and assign them terms from two controlled vocabularies:
+      <a href="https://www.congress.gov/help/field-values/policy-area">Policy Area terms</a> and <a href="https://www.congress.gov/help/field-values/legislative-subject-terms">
+      Legislative Subject Terms</a>. The former is a broad overview of the topic of a bill (only one heading is assigned), while the latter is much more granular, though less
+      easy to browse.</p>
+    <p>Using the <a href="https://www.gpo.gov/fdsys/bulkdata/BILLSTATUS">bulk bill status system</a>, information for individual bills is downloaded and analyzed. Progress of bills through the
+      committee system is tracked and correlated with the policy areas and subject headings noted above. Finally, a series of Sankey diagrams are constructed with the resulting data.</p>
+      <h2>Caveats</h2>
+        <p>For the sake of simplicity, only committees (and not subcommittees) are shown on the diagrams. As bill status data is manually downloaded, activity for the most recent congress may be slightly out-of-date.<p>
+  </div>
+	</div>
+</div>
+
+<div class="col-sm-5 col-md-5 col-lg-5">
+ <div class="panel panel-default">
+<div class="panel-body">
+<h3>Contact</h3>
+<p>Committee Flow is an experimental project of Ed Sperr, M.L.I.S.</p>
+<p>Ed can be reached at <a href="mailto:ed_sperr@hotmail.com">ed_sperr@hotmail.com</a> or <a href="mailto:esperr@uga.edu">esperr@uga.edu</a>.</p>
+      </div>
+   </div>
+
+	<div class="panel panel-default">
+	<div class="panel-body">
+  	<h3>Technologies</h3>
+		<p>Committee Flow is powered by JavaScript and <a href="http://jquery.com/">jQuery</a>. The script for analyzing bill status data is written in <a href="https://www.python.org/">Python</a>. Govinfo does not have a public API as yet, so a custom webservice
+      is used to fetch the JSON that provides the yearly counts. <a href="https://developers.google.com/chart/interactive/docs/gallery/barchart">Google Charts</a>
+      is used to draw the charts and responsive layout is made easier with <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
+    <p>You can find the source code for this application at <a href="https://github.com/esperr/committee-flow/">GitHub</a>.</p>
+
+    <h3>License</h3>
+		<p>Please note that the information provided here comes ultimately from the <a href="https://www.gpo.gov/">Government Printing Office</a>.</p>
+    <p>The code underlying this application is Public Domain, but if you use Committee Flow for publication, I'd appreciate a citation:
+      <blockquote>
+        Sperr E. Committee Flow [Internet]. 2018 [cited <em>your_date_here</em>]. Available from http://esperr.github.io/committee-flow/
+      </blockquote>
+    </p>
+
+  </div>
+	</div>
+
+
+
+  <div class="panel panel-default">
+  <div class="panel-body">
+    <h2>See also...</h2>
+    <p>Want to have even more fun with visualization of congressional data? Check out <a href="https://esperr.github.io/members-by-interest/">
+      Members by Interest</a> and <a href="https://esperr.github.io/congress-by-year/">Congress by Year</a></p>
+  </div>
+  </div>
+
+      </div>
+
+</div>
+</div>
+<script>
+(function() {
+var currentwidth = $(".aboutleft").innerWidth() * .9;
+console.log(currentwidth);
+$("img").width(currentwidth);
+})
+
+();
+</script>
+
+</body>
