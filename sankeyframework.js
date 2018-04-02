@@ -27,9 +27,7 @@
     $('#type option[value=' + billType + ']').prop('selected', true);
     $('#classification option[value=' + classification + ']').prop('selected', true);
 
-    var currentLocation = location.hostname;
-    console.log(currentLocation);
-    var filenameStem = "./data/sankey";
+    var filenameStem = "https://esperr.github.io/committee-flow/data/sankey";
     var allsubjects;
 
     //manually call a fetch when we load the page for the first time
