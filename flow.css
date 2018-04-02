@@ -23,7 +23,7 @@ body {
 
 #topbanner {
   color: white;
-  background-color:  Gray;
+  background-color:  #afafaf;
   font-family: "Century Gothic", Helvetica, sans-serif;
   padding-top: .8em;
   padding-bottom: 1em;
@@ -42,4 +42,18 @@ body {
 
 #about:hover, #about:focus {
   background-color: #E4E3D2;
+}
+
+#sankeyselect {
+    font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 2em;
+    margin-bottom:2em;
+    background-color: rgb(209, 226, 255);
+  border-radius: 10% / 20%;
+
+}
+
+
+#sankey_basic {
+  margin-bottom: 5em;
 }
