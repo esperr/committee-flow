@@ -31,13 +31,14 @@ Designed and built by Ed Sperr (esperr@uga.edu or ed_sperr@hotmail.com)
   </div>
 
   <div class="row">
-
+    <div class="col-sm-12 col-md-12 col-lg-12">
+    <div id="sankeyselect">
     <p class="conglabel">Initial committee assigments and reports from the
       <select id="congress">
           <option value="113">113</option>
           <option value="114">114</option>
           <option value="115">115</option>
-        </select> congress</p>
+        </select>th congress</p>
 
    <p class="areatype">Select type of bill:
     <select id="type">
@@ -52,14 +53,23 @@ Designed and built by Ed Sperr (esperr@uga.edu or ed_sperr@hotmail.com)
       <option value="subjects">Legislative Subjects</option>
     </select></p>
     <br />
-    Display Sankey diagram for: <select id="subjectlisting">
+    Now displaying diagram for: <select id="subjectlisting">
        </select>
-    <br /><br /><br />
+  </div>
 
     <div id="sankey_basic"></div>
 
   </div>
 </div>
+</div>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">  <p>Design and contruction by Ed Sperr, M.L.I.S. (<a href="mailto:ed_sperr@hotmail.com">ed_sperr@hotmail.com</a>)   |
+        Data from <a href="https://www.gpo.gov/fdsys/bulkdata/BILLSTATUS">GPO</a>  |   Charting tools from  <a href="https://developers.google.com/chart/interactive/docs/gallery/sankey" target="_blank">Google</a>
+       | See the code at <a href="https://github.com/esperr/committee-flow">GitHub</a></p></span>
+    </div>
+  </footer>
   </body>
   <script src="./sankeyframework.js"></script>
 </html>
